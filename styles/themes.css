@@ -4,3 +4,49 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --fw-card-title: 700;
+  --fw-card-description: 400;
+  --bg-color: #FFFFFF;
+  --font-color: #000000;
+  --accent-color: #000000;
+  --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
+  repeating-linear-gradient(180deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
+  repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
+  --label-shadow: #ffffff80;
+  --mix-blend-color: #FFFFFF;
+}
+
+:root.theme-dark {
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --fw-card-title: 785;
+  --fw-card-description: 465;
+  --bg-color: #000000;
+  --font-color: #00cc14;
+  --accent-color: #00cc14;
+  --bg-image: repeating-linear-gradient(90deg, #000 0 2px, #fefefe00 2px 4px),
+    repeating-linear-gradient(180deg, #000 0 2px, #fefefe00 2px 4px),
+    repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
+  --label-shadow: #00000050;
+  --mix-blend-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --main-font: "Inter";
+    --accent-font: "PressStart2P";
+    --fw-card-title: 785;
+    --fw-card-description: 465;
+    --bg-color: #000000;
+    --font-color: #00cc14;
+    --accent-color: #00cc14;
+    --bg-image: repeating-linear-gradient(90deg, #000 0 2px, #fefefe00 2px 4px),
+      repeating-linear-gradient(180deg, #000 0 2px, #fefefe00 2px 4px),
+      repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
+    --label-shadow: #00000050;
+    --mix-blend-color: #000000;
+  }
+}

@@ -1,1 +1,42 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --fw-card-title: 700;
+  --fw-card-description: 400;
+  --bg-color: #FFFFFF;
+  --font-color: #000000;
+  --accent-color: #000000;
+  --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
+  repeating-linear-gradient(180deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
+  repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
+  --label-shadow: #ffffff80;
+  --mix-blend-color: #FFFFFF;
+}
+  /* --opacity-outline-button: rgba(255, 0, 112, 0.4);
+  --main-font: "IBM Plex mono";
+  --button-color: #ff0070;
+  --main-title-color: #db00ff;
+  --accent-color: #ff0070;
+  --title-color: #ff0070;
+  --subtitle-color: #000028;
+  --link-color: #f1b2ce;
+  --card-discription-text-color: #f1b2ce;
+  --accent-color_light_1024: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
+  --rec: inline;
+  --coner-element-color: #ff0070; */
+
+  /* html {
+    font-family: var(--fonts, Helvetica, Arial, sans-serif);
+  }  */
+
+  /* body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    body {
+        font-family: 'Roboto-Flex-Variable', sans-serif;
+    }
+}  */
