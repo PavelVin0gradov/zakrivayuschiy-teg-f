@@ -31,11 +31,11 @@
     repeating-linear-gradient(180deg, #000 0 2px, #fefefe00 2px 4px),
     repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
   --label-shadow: #00000050;
-  --mix-blend-color: #000000;
+  --mix-blend-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  :root {
     --main-font: "Inter";
     --accent-font: "PressStart2P";
     --fw-card-title: 785;
@@ -47,6 +47,6 @@
       repeating-linear-gradient(180deg, #000 0 2px, #fefefe00 2px 4px),
       repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
     --label-shadow: #00000050;
-    --mix-blend-color: #000000;
+    --mix-blend-color: #00cc14;
   }
 }
