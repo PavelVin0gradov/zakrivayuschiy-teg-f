@@ -9,16 +9,16 @@
   --accent-font: "PressStart2P";
   --fw-card-title: 700;
   --fw-card-description: 400;
-  --bg-color: #FFFFFF;
+  --bg-color: #ffffff;
   --font-color: #000000;
   --accent-color: #000000;
   --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
-  repeating-linear-gradient(180deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
-  repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
+    repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
   --label-shadow: #ffffff80;
-  --mix-blend-color: #FFFFFF;
+  --mix-blend-color: #ffffff;
   --heart-icon-contour: #000000;
-  --heart-bg: #FF0000;
+  --heart-bg: #ff0000;
 }
 
 :root.theme-dark {
@@ -35,7 +35,7 @@
   --label-shadow: #00000050;
   --mix-blend-color: #00cc14;
   --heart-icon-contour: #00cc14;
-  --heart-bg: #FF0000;
+  --heart-bg: #ff0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +53,6 @@
     --label-shadow: #00000050;
     --mix-blend-color: #00cc14;
     --heart-icon-contour: #00cc14;
-    --heart-bg: #FF0000;
+    --heart-bg: #ff0000;
   }
 }
