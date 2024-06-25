@@ -17,6 +17,8 @@
   repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
   --label-shadow: #ffffff80;
   --mix-blend-color: #FFFFFF;
+  --heart-icon-contour: #000000;
+  --heart-bg: #FF0000;
 }
 
 :root.theme-dark {
@@ -32,6 +34,8 @@
     repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
   --label-shadow: #00000050;
   --mix-blend-color: #00cc14;
+  --heart-icon-contour: #00cc14;
+  --heart-bg: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,5 +52,7 @@
       repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
     --label-shadow: #00000050;
     --mix-blend-color: #00cc14;
+    --heart-icon-contour: #00cc14;
+    --heart-bg: #FF0000;
   }
 }

@@ -34,7 +34,7 @@
   flex-direction: column;
   align-items: center;
   border: 2px solid var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, sans-serif);
   inline-size: 100%;
   min-block-size: 327px;
   padding-block-start: 120px;
@@ -58,8 +58,9 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 7px;
   padding-block-start: 25px;
+  padding-inline-start: 15px;
 }
 
 .theme-menu__button {
@@ -118,6 +119,8 @@
 }
 
 .content__card_title {
+  font-family: var(--main-font, sans-serif);
+  font-variation-settings: "wght" var(--fw-card-title);
   inline-size: 95%;
   font-size: 18px;
   line-height: 22px;
@@ -136,7 +139,7 @@
 }
 
 .content__card_img-label {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, sans-serif);
   color: var(--accent-color);
   position: absolute;
   top: 10px;
@@ -151,17 +154,19 @@
       text-shadow: none;
   }
 }
+
 .content__card_description-container {
+  font-family: var(--main-font, sans-serif);
+  font-variation-settings: "wght" var(--fw-card-description);
   display: flex;
   flex-direction: column;
   gap: 27px;
   inline-size: 85%;
-  padding-block-start: 27px;
+  padding-block-start: 20px;
   margin: auto;
 }
 
 .content__card_description {
-  font-family: var(--main-font);
   color: var(--accent-color);
   font-size: 18px;
   line-height: 117%;
@@ -171,17 +176,83 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
+  gap: 8px;
   padding-block-start: 25px;
   padding-inline-end: 25px;
   padding-block-end: 25px;
 }
 
 .card__heart-button {
-  inline-size: 38px;
+  inline-size: 42px;
   block-size: 38px;
-  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 0 4px 0 0;
   background-color: transparent;
-  padding: 0;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.card__heart-button:focus {
+  outline: none;
+}
+
+.card__heart-button:focus-visible {
+  border: 2px solid var(--accent-color);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.sparks {
+  fill: transparent;
+}
+
+.like-icon:hover .core {
+  fill: var(--heart-icon-contour);
+  transition-delay: 0.03s;
+  transition-duration: 0.3s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--heart-icon-contour);
+  transition-delay: 0.05s;
+  transition-duration: 0.3s;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-bg);
+  transition-delay: 0.03s;
+  transition-duration: 0.3s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-bg);
+  transition-delay: 0.05s;
+  transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-bg);
+  transition-delay: 0.03s;
+  transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-bg);
+  transition-delay: 0.05s;
+  transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-bg);
+  transition-delay: 0.06s;
+  transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .sparks {
+  fill: var(--heart-bg);
+  transition-delay: 0.06s;
+  transition-duration: 0.3s;
 }
 
 .card__like-button {
@@ -191,6 +262,7 @@
   background-color: transparent;
   inline-size: 130px;
   block-size: 38px;
+  cursor: pointer;
 }
 
 .button-animation {
@@ -254,4 +326,81 @@
   min-block-size: 84px;
   font-size: 14px;
   line-height: 90%;
+  cursor: pointer;
 }
+
+
+.button-ok {
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 0;
+  background: var(--bg-color);
+  border: 2px solid var(--accent-color);
+}
+
+.popup {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  padding: 30px 26px;
+  color: var(--font-color);
+  background: var(--bg-color);
+  border: 2px solid var(--accent-color);
+}
+
+.popup__button {
+  cursor: pointer;
+}
+
+.popup::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popup:not([open]) {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.popup__text {
+  text-transform: uppercase;
+  line-height: 1.5;
+  max-width: 234px;
+  width: 100%;
+}
+
+.popup__text-container {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+@media (width <= 375px) {
+  .popup__container {
+    gap: 28px;
+  }
+
+  .popup__text {
+    width: 80%;
+  }
+
+  .popup {
+    padding: 32px 38px;
+  }
+}
+
+.popup .floppy_img {
+  width: 39px;
+  height: 39px;
+  color: var(--accent-color);
+  mix-blend-mode: normal;
+}
+
+/* .popup__button_text {
+  border: 2px solid var(--accent-color);
+} */

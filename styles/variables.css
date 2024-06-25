@@ -12,31 +12,6 @@
   repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
   --label-shadow: #ffffff80;
   --mix-blend-color: #FFFFFF;
+  --heart-icon-contour: #000000;
+  --heart-bg: #FF0000;
 }
-  /* --opacity-outline-button: rgba(255, 0, 112, 0.4);
-  --main-font: "IBM Plex mono";
-  --button-color: #ff0070;
-  --main-title-color: #db00ff;
-  --accent-color: #ff0070;
-  --title-color: #ff0070;
-  --subtitle-color: #000028;
-  --link-color: #f1b2ce;
-  --card-discription-text-color: #f1b2ce;
-  --accent-color_light_1024: #ff0070;
-  --bg-image: url(../images/cover-image-dark.png);
-  --rec: inline;
-  --coner-element-color: #ff0070; */
-
-  /* html {
-    font-family: var(--fonts, Helvetica, Arial, sans-serif);
-  }  */
-
-  /* body {
-    font-family: 'Roboto', sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-    body {
-        font-family: 'Roboto-Flex-Variable', sans-serif;
-    }
-}  */

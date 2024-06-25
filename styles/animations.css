@@ -17,11 +17,38 @@
   animation: arrow-animation 0.5s ease-in-out infinite alternate;
 }
 
+.like-icon.is-liked .heart {
+  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: heart-sparks 0.3s ease-in 0.3s 1 alternate;
+}
+
 @keyframes arrow-animation {
   from {
     left: -20px;
   }
   to {
     left: -16px;
+  }
+}
+
+@keyframes heart-scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes heart-sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
