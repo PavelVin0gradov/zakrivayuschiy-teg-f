@@ -10,7 +10,6 @@
   --fw-card-title: 700;
   --fw-card-description: 400;
   --bg-color: #ffffff;
-  --font-color: #000000;
   --accent-color: #000000;
   --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, #fefefe00 2px 4px),
@@ -27,7 +26,6 @@
   --fw-card-title: 785;
   --fw-card-description: 465;
   --bg-color: #000000;
-  --font-color: #00cc14;
   --accent-color: #00cc14;
   --bg-image: repeating-linear-gradient(90deg, #000 0 2px, #fefefe00 2px 4px),
     repeating-linear-gradient(180deg, #000 0 2px, #fefefe00 2px 4px),
@@ -45,7 +43,6 @@
     --fw-card-title: 785;
     --fw-card-description: 465;
     --bg-color: #000000;
-    --font-color: #00cc14;
     --accent-color: #00cc14;
     --bg-image: repeating-linear-gradient(90deg, #000 0 2px, #fefefe00 2px 4px),
       repeating-linear-gradient(180deg, #000 0 2px, #fefefe00 2px 4px),
