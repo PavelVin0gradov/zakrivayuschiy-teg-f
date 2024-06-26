@@ -21,8 +21,6 @@
 }
 
 :root.theme-dark {
-  --main-font: "Inter";
-  --accent-font: "PressStart2P";
   --fw-card-title: 785;
   --fw-card-description: 465;
   --bg-color: #000000;
@@ -33,13 +31,10 @@
   --label-shadow: #00000050;
   --mix-blend-color: #00cc14;
   --heart-icon-contour: #00cc14;
-  --heart-bg: #ff0000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-font: "Inter";
-    --accent-font: "PressStart2P";
     --fw-card-title: 785;
     --fw-card-description: 465;
     --bg-color: #000000;
@@ -50,6 +45,5 @@
     --label-shadow: #00000050;
     --mix-blend-color: #00cc14;
     --heart-icon-contour: #00cc14;
-    --heart-bg: #ff0000;
   }
 }
