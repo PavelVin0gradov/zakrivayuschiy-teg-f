@@ -14,9 +14,9 @@
 
 */
 
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
 .page {
   margin: auto;
@@ -142,7 +142,6 @@
 
 .content__card_img-container {
   position: relative;
-  inline-size: 371px;
   block-size: 371px;
 }
 
@@ -419,7 +418,7 @@
   }
 
   .content__card_img-container {
-    inline-size: 696px;
+    inline-size: 690px;
     block-size: 696px;
   }
 
