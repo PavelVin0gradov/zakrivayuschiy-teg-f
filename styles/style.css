@@ -33,36 +33,6 @@
   font-variation-settings: "wght" 400;
 }
 
-/* Фильтра */
-
-.saturate {
-  filter: saturate(360%);
-}
-
-.sepia {
-  filter: sepia(80%);
-}
-
-.grayscale {
-  filter: grayscale(75%);
-}
-
-.hue-rotate {
-  filter: hue-rotate(30deg);
-}
-
-.blur {
-  filter: blur(2px);
-}
-
-.multi {
-  filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%);
-}
-
-.invert {
-  filter: invert(90%);
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -78,7 +48,7 @@
 }
 
 .header__logo {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
   line-height: 49px;
   text-decoration: none;
 }
@@ -172,6 +142,8 @@
 
 .content__card_img-container {
   position: relative;
+  inline-size: 371px;
+  block-size: 371px;
 }
 
 .content__card_img {
@@ -180,6 +152,7 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
+  block-size: 100%;
 }
 
 .content__card_img-label {
@@ -211,7 +184,7 @@
   flex-direction: column;
   gap: 27px;
   margin: auto;
-  padding-block-start: 20px;
+  padding-block-start: 25px;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--fw-card-description);
   inline-size: 85%;
@@ -325,7 +298,7 @@
   background-color: var(--bg-color);
   cursor: pointer;
   inline-size: 306px;
-  min-block-size: 84px;
+  block-size: 84px;
 }
 
 .button-ok {
@@ -385,6 +358,36 @@
   mix-blend-mode: normal;
 }
 
+/* Фильтра */
+
+.saturate {
+  filter: saturate(360%);
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.grayscale {
+  filter: grayscale(75%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(30deg);
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.multi {
+  filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%);
+}
+
+.invert {
+  filter: invert(90%);
+}
+
 @media (width <= 375px) {
   .popup__container {
     gap: 28px;
@@ -400,13 +403,34 @@
 }
 
 @media (width >= 696px) {
-  .footer__button-save {
-    flex-direction: row;
-    inline-size: 335px;
-    max-block-size: 51px;
+  .header {
+    padding-block-start: 146px;
+    min-block-size: 368px;
+  }
+
+  .header__title {
+    padding-block-start: 30px;
+  }
+
+  .theme-menu__list {
+    gap: 9px;
+    padding-inline-start: 17px;
+    padding-block-start: 30px;
+  }
+
+  .content__card_img-container {
+    inline-size: 696px;
+    block-size: 696px;
   }
 
   .content__card_description-container {
-    inline-size: 95%;
+    inline-size: 93%;
+    padding-block-start: 27px;
+  }
+
+  .button__save {
+    flex-direction: row;
+    inline-size: 335px;
+    block-size: 51px;
   }
 }
