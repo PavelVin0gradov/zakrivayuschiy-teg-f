@@ -24,6 +24,8 @@
 
 .like-icon.is-liked .sparks {
   animation: heart-sparks 0.3s ease-in 0.3s 1 alternate;
+  fill: var(--heart-bg);
+  transition: 0.3s 0.06s;
 }
 
 .sparks {
@@ -61,11 +63,6 @@
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--heart-bg);
-  transition: 0.3s 0.06s;
-}
-
-.like-icon.is-liked .sparks {
   fill: var(--heart-bg);
   transition: 0.3s 0.06s;
 }
